@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Rakkas&display=swap');
 
-/* Variáveis */
+/* 🎨 Variáveis */
 :root {
     --primary-color: #026773;
     --secondary-color: #3CA6A6;
@@ -11,9 +11,7 @@
     --font-titulo: "Rakkas", serif;
 }
 
-/* código omitido */
-
-/* Reset */
+/* 🔄 Reset */
 * {
     margin: 0;
     padding: 0;
@@ -21,34 +19,164 @@
     font-family: var(--font-body);
 }
 
-/* Corpo da página */
+/* 🌍 Corpo da página */
 body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
 }
 
+/* 🎯 Cabeçalho */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font-titulo);
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+header p {
+    margin-bottom: 20px;
+}
+
+/* 🧭 Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 10px 18px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--button-hover);
+}
+
+/* 📄 Seções */
+main {
+    padding: 40px 20px;
+}
+
+.conteudo {
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-family: var(--font-titulo);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
 h3 {
     margin-top: 25px;
+    font-size: 1.4rem;
 }
 
 p {
-    margin-top: 20px;
+    margin-top: 15px;
+    font-size: 1rem;
 }
 
+ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* 🎥 Vídeo responsivo */
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* 🚀 Botões */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--button-hover);
+}
+
+.cta-footer {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.cta-footer:hover {
+    background-color: var(--button-hover);
+}
+
+/* 🦶 Rodapé */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* 🖼️ Imagens */
 img {
     max-width: 90%;
+    height: auto;
+    border-radius: 10px;
 }
-/* código omitido */
 
-/* Responsividade */
+/* 📱 Responsividade */
 @media (max-width: 768px) {
-    .conteudo {
-        width: 90%;
+    header h1 {
+        font-size: 2rem;
     }
 
     nav ul {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -57,7 +185,20 @@ img {
         margin: 5px 0;
     }
 
-    .cta-button {
-        width: 100%;
+    iframe {
+        height: 250px;
+    }
+
+    .conteudo {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
     }
 }
