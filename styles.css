@@ -2,9 +2,9 @@
 
 /* 🎨 Variáveis */
 :root {
-    --primary-color: #026773;
-    --secondary-color: #3CA6A6;
-    --text-color: #024959;
+    --primary-color: #73023a;
+    --secondary-color: #c44b83;
+    --text-color: #ec537954;
     --background-color: #F2E3D5;
     --button-hover: #012E40;
     --font-body: "Chocolate Classical Sans", serif;
@@ -29,7 +29,7 @@ body {
 /* 🎯 Cabeçalho */
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: rgb(252, 232, 232);
     padding: 30px 20px;
     text-align: center;
 }
