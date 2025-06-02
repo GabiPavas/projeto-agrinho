@@ -140,7 +140,7 @@ iframe {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--secondary-color);
-    color: white;
+    color: rgb(201, 3, 151);
     border-radius: 25px;
     text-decoration: none;
     margin-bottom: 10px;
@@ -154,7 +154,7 @@ iframe {
 /* 🦶 Rodapé */
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: rgb(226, 169, 169);
     text-align: center;
     padding: 20px;
 }
@@ -167,11 +167,11 @@ footer p {
 img {
     max-width: 90%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 
 /* 📱 Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 7608px) {
     header h1 {
         font-size: 2rem;
     }
